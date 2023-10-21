@@ -1,0 +1,30 @@
+/*PAGINA CONTACTO*/
+section{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+form{
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    flex-direction: column;
+    gap: 2vh;
+    overflow: auto;
+}
+#formulario{
+    width: 40vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3vh;
+    background: black;
+    opacity: 80%;
+    gap: 5vh;
+    border-radius: 0% 10% 0% 10%;
+    padding: 2vh;
+}
