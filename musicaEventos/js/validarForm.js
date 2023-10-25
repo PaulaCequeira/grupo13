@@ -1,5 +1,5 @@
 function validarForm(){
-    //trim() elimina espacios en blanco
+    
 
     var nombre = document.getElementById("nombre").value.trim()
     var apellido = document.getElementById("apellido").value.trim()
