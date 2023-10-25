@@ -128,19 +128,5 @@ h2{
 a>img{
     width: 5vh;
 }
-#pie{
-    display: flex;
-    width: 50vw;
-    align-items: center;
-    justify-content:center;
-}
-#pie2{
-    display: flex;
-    width: 50vw;
-    align-items: center;
-    background-size:50vw;
-    justify-content:center;
-    flex-direction: column;
-}
 
 
