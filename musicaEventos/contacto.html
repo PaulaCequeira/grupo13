@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="IMG/mic.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Satisfy-Regular.ttf">
+    <link rel="shortcut icon" href="IMG/mic.png" type="image/x-icon">
+    <title>Música en vivo</title>
+</head>
+<body>
+    <main>
+        <header id="header"></header>
+      
+        <section id="consulta">
+            <div id="formulario">
+                <h2>Dejanos tu consulta</h2>
+                <form  onsubmit="return validarForm()"> 
+                    <!-- for y id relacionan, en name se guarda el dato -->
+                        <label for="nombre">Nombres</label>
+                        <input type="text" name= "nombre" id="nombre" placeholder="Nombres">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name= "apellido" id="apellido">
+                        <label for="tel">Teléfono/celular</label>
+                        <input type="tel" name="tel" id="tel">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" name="email" id="email">
+                    <label for="msj">Consulta </label>
+                    <textarea name="msj" id="msj" cols="30" rows="10"></textarea>
+                
+                <div id="botones">
+                    <input type="submit" value="Enviar" class="btn_form">
+                    <input type="reset" value="Borrar"class="btn_form">
+                </div>
+                    
+                
+                </form>
+                <script src="validarForm.js"></script>
+            </div>
+        </section>
+        <footer>
+            <div id="pie">
+                <a href="https://www.facebook.com"><img src="IMG/facebook.png" alt=""></a>
+                <a href="https://www.instagram.com"><img src="IMG/instagram.png" alt=""></a>
+                <a href="https://www.youtube.com"><img src="IMG/youtube.png" alt=""></a>
+                <a href="https://maps.google.com"><img src="IMG/mapa.png" alt=""></a>
+            </div>
+            <div id="pie2">
+                <address><p>Matheu 3400  |  San Martín  |  Buenos Aires</p></address>
+                <p>CAC 2023</p> 
+            </div>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="JS/header.js"></script> 
+    
+    </body>
+</html>
