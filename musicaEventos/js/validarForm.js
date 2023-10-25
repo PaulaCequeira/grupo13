@@ -20,5 +20,7 @@ function validarForm(){
         if(isNaN(tel)){
             alert("Debe completar sólo con números el tel")
         }
+        alert("Se ha enviado la consulta correctamente")
+        return true
 
 } 
