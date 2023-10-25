@@ -41,6 +41,13 @@
                 </form>
             </div>
         </section>
+        <section class="map-container">
+            <div class="map"><gmp-map center="-37.32726287841797,-59.13264846801758" zoom="14" map-id="DEMO_MAP_ID">
+                    <gmp-advanced-marker position="-37.32726287841797,-59.13264846801758" title="My location">
+                    </gmp-advanced-marker>
+                </gmp-map>
+            </div>
+        </section>
     </main>
     <footer>
 
@@ -57,6 +64,11 @@
 
 
     </footer>
+
+    <script src="/js/contactar.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4BD9MyQBV1vH55ASLDXwBP0Ufic5f--g&callback=console.debug&libraries=maps,marker&v=beta">
+        </script>
 </body>
 
 </html>
