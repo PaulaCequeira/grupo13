@@ -33,3 +33,17 @@ footer>p{
     text-align: right;
     color: white;
 }
+#pie{
+    display: flex;
+    width: 50vw;
+    align-items: center;
+    justify-content:center;
+}
+#pie2{
+    display: flex;
+    width: 50vw;
+    align-items: center;
+    background-size:50vw;
+    justify-content:center;
+    flex-direction: column;
+}
