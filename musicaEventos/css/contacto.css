@@ -28,3 +28,14 @@ form{
     border-radius: 0% 10% 0% 10%;
     padding: 2vh;
 }
+/* Contenedor para el mapa */
+.map-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* Define el mapa */
+  .map {
+    width: 40%;
+    float: right;
+  }
