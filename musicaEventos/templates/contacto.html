@@ -28,17 +28,25 @@
         <section id="scontacto">
             <div id="formulario">
                 <h2>Dejanos tu consulta</h2>
-                <form action="">
-                    <label for="name">Nombre y apellido</label>
-                    <input type="text" id="name">
-                    <label for="phone">Teléfono/celular</label>
-                    <input type="tel" id="phone">
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" name="email" id="email">
+               <form  onsubmit="return validarForm()"> 
+                    
+                        <label for="nombre">Nombres</label>
+                        <input type="text" name= "nombre" id="nombre">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name= "apellido" id="apellido">
+                        <label for="tel">Teléfono/celular</label>
+                        <input type="tel" name="tel" id="tel">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" name="email" id="email">
                     <label for="msj">Consulta </label>
                     <textarea name="msj" id="msj" cols="30" rows="10"></textarea>
-                    <button onclick="contactar()" id="contacto">Enviar</button>
+                
+                <div id="botones">
+                    <input type="submit" value="Enviar" class="btn_form">
+                    <input type="reset" value="Borrar"class="btn_form">
+                </div>
                 </form>
+                <script src="validarForm.js"></script>
             </div>
         </section>
         <section class="map-container">
