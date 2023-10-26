@@ -66,14 +66,13 @@ input{
     }
     form{width: 80%;}
     .map{width: 90%;}
-    #pie{width: 90vw;}
-    footer{height: 40vh; flex-wrap: wrap}
+    
 }
 @media only screen and (max-width: 400px) {
     /* For mobile phones: */
     #formulario{width: 90vw;}
     form{width: 70vw;}
     .map{width: 90%;}
-    nav{flex-direction: column;}
+    
     
 }
