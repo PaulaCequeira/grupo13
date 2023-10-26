@@ -100,14 +100,10 @@ body {
 @media only screen and (max-width: 800px) {
     
     .img-galeria {width: 45%;}
-    footer{
-        height: 40vh;flex-wrap: wrap}
+
 }
 @media only screen and (max-width: 500px) {
     /* For mobile phones: */
     .img-galeria {width: 90%;}
-    #pie{width: 90vw;}
-    footer{
-        height: 40vh;flex-wrap: wrap}
-    nav{flex-direction: column;}
+   
 }
