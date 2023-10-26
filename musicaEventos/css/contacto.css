@@ -1,9 +1,15 @@
 /*PAGINA CONTACTO*/
-section{
-    height: 70vh;
+#scontacto{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    gap: 5vw;
+    background-color: rgb(221, 207, 192);
+    flex-wrap: wrap;
 }
 form{
     width: 30vw;
@@ -25,31 +31,49 @@ form{
     background: black;
     opacity: 80%;
     gap: 5vh;
-    border-radius: 0% 10% 0% 10%;
+    border-radius: 10% 10% 10% 10%;
     padding: 2vh;
 }
-/* Contenedor para el mapa */
-.map-container {
+
+input{
+    color: black;
+}
+#botones{
     display: flex;
-    flex-direction: row;
-  }
-@media only screen and (max-width: 800px) {
-    
-    .img-galeria {width: 45%;}
-    footer{
-        height: 40vh;flex-wrap: wrap}
+    justify-content:center;
+    gap: 2vw;
 }
-@media only screen and (max-width: 500px) {
-    /* For mobile phones: */
-    .img-galeria {width: 90%;}
-    #pie{width: 90vw;}
-    footer{
-        height: 40vh;flex-wrap: wrap}
-    nav{flex-direction: column;}
+.btn_form{
+
+    background-color: rgb(216, 202, 202);
+    width: auto;
+    padding: 2vh;
+    border-radius: 50%  50% 50%  50%;
 }
-  
   /* Define el mapa */
-  .map {
-    width: 40%;
-    float: right;
-  }
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%; 
+    height: 50vh;
+    
+}
+@media only screen and (max-width: 700px) {
+
+    #formulario{
+        width: 90vw;
+    }
+    form{width: 80%;}
+    .map{width: 90%;}
+    #pie{width: 90vw;}
+    footer{height: 40vh; flex-wrap: wrap}
+}
+@media only screen and (max-width: 400px) {
+    /* For mobile phones: */
+    #formulario{width: 90vw;}
+    form{width: 70vw;}
+    .map{width: 90%;}
+    nav{flex-direction: column;}
+    
+}
