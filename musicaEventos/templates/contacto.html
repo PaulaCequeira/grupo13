@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/mic.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="../css/Satisfy-Regular.ttf">
     <link rel="shortcut icon" href="../img/mic.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/contacto.css">
@@ -28,9 +29,9 @@
         <section id="scontacto">
             <div id="formulario">
                 <h2>Dejanos tu consulta</h2>
-               <form  onsubmit="return validarForm()"> 
-                    
-                        <label for="nombre">Nombres</label>
+                <form  onsubmit="return validarForm()"> 
+                    <!-- for y id relacionan, en name se guarda el dato -->
+                        <label for="nombre">Nombre</label>
                         <input type="text" name= "nombre" id="nombre">
                         <label for="apellido">Apellido</label>
                         <input type="text" name= "apellido" id="apellido">
@@ -39,18 +40,19 @@
                         <label for="email">Correo electrónico</label>
                         <input type="email" name="email" id="email">
                     <label for="msj">Consulta </label>
-                    <textarea name="msj" id="msj" cols="30" rows="10"></textarea>
+                    <input type="text"name="msj" id="msj" cols="30" rows="10"></input>
                 
                 <div id="botones">
                     <input type="submit" value="Enviar" class="btn_form">
                     <input type="reset" value="Borrar"class="btn_form">
                 </div>
                 </form>
-                <script src="validarForm.js"></script>
+                <script src="../js/validarForm.js"></script>
             </div>
-        </section>
-        <section class="map-container">
-            <div class="map"><gmp-map center="-37.32726287841797,-59.13264846801758" zoom="14" map-id="DEMO_MAP_ID">
+        
+        
+            <div class="map">
+                <gmp-map center="-37.32726287841797,-59.13264846801758" zoom="14" map-id="DEMO_MAP_ID">
                     <gmp-advanced-marker position="-37.32726287841797,-59.13264846801758" title="My location">
                     </gmp-advanced-marker>
                 </gmp-map>
