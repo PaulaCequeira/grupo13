@@ -129,4 +129,25 @@ a>img{
     width: 5vh;
 }
 
+@media only screen and (max-width: 800px) {
+    
+    .card{width:50%;
+        height: auto;}
+        iframe{width: 100%;}
+    #intro{height: 40%;}
+    .s1{height:60%;
+    padding-bottom: 2vh;}
+}
+@media only screen and (max-width: 500px) {
+    
 
+    .card{width: 100%;
+    height: auto;}
+    iframe{width: 100%;}
+    #pie{width: 90vw;}
+    footer{flex-wrap: wrap}
+    nav{flex-direction: column;}
+    .s1{height:70%;
+        padding-bottom: 2vh;
+    background: rgb(65, 30, 17);}
+}
