@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/mic.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/Satisfy-Regular.ttf">
+    <link rel="shortcut icon" href="../img/mic.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/headerMainFooter.css">
+    <title>Música en vivo</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Live music</h1>
+            <a href="../index.html"><img src="" alt="">Inicio</a>
+            <a href="eventos.html">Eventos</a>
+            <a href="bandas.html">Bandas</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="">Log in</a>
+        </nav>
+    </header>
+    <main>
+        <section id="scontacto">
+            <div id="formulario">
+                <h2>Dejanos tu consulta</h2>
+                <form  onsubmit="return validarForm()"> 
+                    <!-- for y id relacionan, en name se guarda el dato -->
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name= "nombre" id="nombre">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" name= "apellido" id="apellido">
+                        <label for="tel">Teléfono/celular</label>
+                        <input type="tel" name="tel" id="tel">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" name="email" id="email">
+                    <label for="msj">Consulta </label>
+                    <input type="text"name="msj" id="msj" cols="30" rows="10"></input>
+                
+                <div id="botones">
+                    <input type="submit" value="Enviar" class="btn_form">
+                    <input type="reset" value="Borrar"class="btn_form">
+                </div>
+                </form>
+                <script src="../js/validarForm.js"></script>
+            </div>
+        
+        
+            <div class="map">
+                <gmp-map center="-37.32726287841797,-59.13264846801758" zoom="14" map-id="DEMO_MAP_ID">
+                    <gmp-advanced-marker position="-37.32726287841797,-59.13264846801758" title="My location">
+                    </gmp-advanced-marker>
+                </gmp-map>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+        <div id="pie">
+            <a href="https://www.facebook.com"><img src="../img/facebook.png" alt=""></a>
+            <a href="https://www.instagram.com"><img src="../img/instagram.png" alt=""></a>
+            <a href="https://www.youtube.com"><img src="../img/youtube.png" alt=""></a>
+            <a href="https://maps.google.com"><img src="../img/mapa.png" alt=""></a>
+        </div>
+        <div id="pie2">
+            <p>Matheu 3400 | San Martín | Buenos Aires</p>
+            <p>CAC 2023</p>
+        </div>
+
+
+    </footer>
+
+    <script src="/js/contactar.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4BD9MyQBV1vH55ASLDXwBP0Ufic5f--g&callback=console.debug&libraries=maps,marker&v=beta">
+        </script>
+</body>
+
+</html>

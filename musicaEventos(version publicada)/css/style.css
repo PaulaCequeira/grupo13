@@ -1,0 +1,153 @@
+/* ESTILO DEL INDEX */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.s1{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    gap: 5vw;
+    height: 75vh;
+}
+#s2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    height: 70vh;
+    background-color:antiquewhite;
+    padding: 5vw;
+}
+#s2 h2{
+    color: black;
+}
+#s3{
+    background-color: rgb(246, 240, 240);
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+#contacto{
+    background-color: white;
+    color:black;
+    border: none;   
+    border-radius: 60% 90% 60% 90%;
+    cursor:pointer;
+    padding: 2vh;
+    font-size: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 5vh;
+    font-size: 3vh;
+    
+}
+/* div{
+    width: 50vw;
+    height: 100%;
+} */
+#intro{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+    flex-direction: column;
+    justify-content: normal;
+    align-items: center;
+    
+}
+div>p{
+    color: white;
+    font-size: 3vh;
+}
+h1{
+    font-size: 60px;
+
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+}
+.x{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    background-size: contain;
+    gap:1vh;
+    margin-bottom: 10vh;
+    width: 100%;
+    height: auto;
+    
+
+    
+}
+
+#contacto:hover, nav>a:hover{
+    font-weight: bolder;
+}
+.card{
+    margin-top: 10vh;
+    padding: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    width: 20%;
+    height: 90%;
+    border-radius: 0% 0% 0% 0%;
+    overflow: hidden;
+}
+.card:hover{
+    border: solid;
+    border-color: rgb(192, 207, 231);
+
+}
+.x img{
+    padding: 1vw;
+    width: 90%;
+    border-radius:  0% 0% 0% 0%;
+} 
+.card>p{
+    padding: 1vw;
+    color: black;
+}
+.card>h3{
+    color: black;
+}
+
+a>img{
+    width: 5vh;
+}
+
+@media only screen and (max-width: 800px) {
+    
+    .card{width:50%;
+        height: auto;}
+        iframe{width: 100%;}
+    #intro{height: 40%;}
+    .s1{height:60%;
+    padding-bottom: 2vh;}
+}
+@media only screen and (max-width: 500px) {
+    
+
+    .card{width: 100%;
+    height: auto;}
+    iframe{width: 100%;}
+    #pie{width: 90vw;}
+    footer{flex-wrap: wrap}
+    nav{flex-direction: column;}
+    .s1{height:70%;
+        padding-bottom: 2vh;
+    background: rgb(65, 30, 17);}
+}
